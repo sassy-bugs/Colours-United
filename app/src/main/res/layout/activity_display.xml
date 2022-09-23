@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity"
+    android:orientation="vertical"
+    android:background="@color/Navy"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:text="CONFESSIONS"
+        android:textStyle="italic"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:background="@color/Red"/>
+
+    <ImageView
+        android:layout_marginTop="30dp"
+        android:layout_width="400dp"
+        android:layout_height="217dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/just" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/Blue"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_lock_light_blue_24dp"
+            android:drawableLeft="@drawable/ic_lock_light_blue_24dp"
+            android:drawablePadding="16dp"
+            android:hint="We all have secrets what is yours?"
+
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="23sp" />
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="30dp"
+        android:text="SHARE"
+        android:textAllCaps="false"
+        android:textColor="@color/Navy"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="newActivity"/>
+
+</LinearLayout>
